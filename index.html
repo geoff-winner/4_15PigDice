@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Bank Account</title>
+    <title>Pig Dice</title>
   </head>
   <body>
-     <center>
-    <img src="img/Pig_trans.png">
-    <div class ="container-fluid">
+<div class='row'>
+        <div class ="container-fluid">
+        <div class ='col-md-3'></div>
+        <div class ='col-md-3'>
+        <img src="img/Pig_trans.png">
         <form id='choice'>
             <button type='submit' class='btn btn-warning'>Roll the Die</button>
         </form>
         <form id='hold'>
             <button type='submit' class='btn btn-warning'>Hold</button>
         </form>
-            <h3>Current Score: <span class='current_score'></span>
-            <h3>Total Score:<span class='total_score'></span>
+            <h3>Current Score Player 1: <span class='current_score'></span>
+            <h3>Total Score Player 1: <span class='total_score'></span>
+        </div>
+
+
+        <div class ='col-md-3'>
+            <img class='p1' src="img/Pig_trans.png">
+            <form id='choice2'>
+                <button type='submit' class='btn btn-danger'>Roll the Die</button>
+            </form>
+            <form id='hold2'>
+                <button type='submit' class='btn btn-danger'>Hold</button>
+            </form>
+                <h3>Current Score Player 2: <span class='current_score2'></span>
+                <h3>Total Score Player 2: <span class='total_score2'></span>
+        </div>
+        <div class ='col-md-3'></div>
     </div>
-    </center>
+</div>
   </body>
 </html>
