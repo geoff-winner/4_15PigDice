@@ -53,7 +53,6 @@ $(document).ready(function() {
             $('#hold2').show();
             $('#choice2').show();
         }
-        
         event.preventDefault();
     });
     $('form#hold').submit(function(event) {
@@ -67,6 +66,9 @@ $(document).ready(function() {
         $('#choice').hide();
         $('#hold2').show();
         $('#choice2').show();
+        if (total_score >= 100){
+            $('.winner').show();
+        };
 
     });
 
@@ -93,5 +95,9 @@ $(document).ready(function() {
         $('#choice2').hide();
         $('#hold').show();
         $('#choice').show();
+
+        if (total_score2 >= 100){
+            $('.winner').show();
+        };
     });
 });
