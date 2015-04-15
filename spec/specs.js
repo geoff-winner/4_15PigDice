@@ -1,17 +1,18 @@
-describe("BankAccount", function() {
-  describe("deposit", function() {
-    it("adds the amount to the balance", function() {
-      var testBankAccount = Object.create(BankAccount);
-      testBankAccount.deposit(10);
-      expect(testBankAccount.balance).to.equal(10);
-    });
-  });
+describe('diceroll', function(){
 
-  describe("withdraw", function() {
-    it("subtracts the amount from the balance", function() {
-      var testBankAccount = Object.create(BankAccount);
-      testBankAccount.withdraw(10);
-      expect(testBankAccount.balance).to.equal(-10);
+    it("returns score", function(){
+        expect(diceroll(1)).to.equal(1);
     });
-  });
+    it("returns score", function(){
+        expect(diceroll(2)).to.equal(2);
+    });
+    it("returns score", function(){
+        expect(diceroll(3)).to.equal(3);
+    });
+    it("returns score", function(){
+        expect(diceroll(4)).to.equal(4);
+    });
+    it("returns score", function(){
+        expect(diceroll(5)).to.equal(5);
+    });
 });
