@@ -97,7 +97,7 @@ $(document).ready(function() {
         $('#choice').show();
 
         if (total_score2 >= 100){
-            $('.winner').show();
+            $('.winner2').show();
         };
     });
 });

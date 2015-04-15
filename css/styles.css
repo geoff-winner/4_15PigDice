@@ -16,6 +16,14 @@ img {
         -ms-filter: "FlipH";
 }
 
+.buttoncontainer {
+    padding-left: 40px;
+}
+
+body{
+    background-color: #30EAFF;
+}
+
 .winner {
  text-align: center;
  display: none;
