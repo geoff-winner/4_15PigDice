@@ -1,34 +1,42 @@
 #result {
-    display: none;
+  display: none;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
-.p1 {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+.dice1 {
+  border-radius: 20px;
 }
+
+.dice2 {
+  border-radius: 20px;
+}
+
+.spin {
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .buttoncontainer {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 body{
-    background-color: #30EAFF;
+  background-color: #30EAFF;
 }
 
 .winner {
- text-align: center;
- display: none;
+  text-align: center;
+  display: none;
 }
 .winner2 {
- text-align: center;
- display: none;
+  text-align: center;
+  display: none;
 }
